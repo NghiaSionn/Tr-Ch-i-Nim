@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
             labelPlayerName = new Label();
             label2 = new Label();
             buttonStart = new Button();
             buttonSetting = new Button();
             buttonExit = new Button();
+            axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            ((System.ComponentModel.ISupportInitialize)axWindowsMediaPlayer1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -95,11 +98,21 @@
             buttonExit.UseVisualStyleBackColor = true;
             buttonExit.Click += buttonExit_Click;
             // 
+            // axWindowsMediaPlayer1
+            // 
+            axWindowsMediaPlayer1.Enabled = true;
+            axWindowsMediaPlayer1.Location = new Point(24, 53);
+            axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            axWindowsMediaPlayer1.OcxState = (AxHost.State)resources.GetObject("axWindowsMediaPlayer1.OcxState");
+            axWindowsMediaPlayer1.Size = new Size(75, 23);
+            axWindowsMediaPlayer1.TabIndex = 4;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(734, 311);
+            Controls.Add(axWindowsMediaPlayer1);
             Controls.Add(buttonExit);
             Controls.Add(buttonSetting);
             Controls.Add(buttonStart);
@@ -109,6 +122,7 @@
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)axWindowsMediaPlayer1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -121,5 +135,6 @@
         private Button buttonStart;
         private Button buttonSetting;
         private Button buttonExit;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
     }
 }

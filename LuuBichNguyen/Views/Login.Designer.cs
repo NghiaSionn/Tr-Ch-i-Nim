@@ -37,10 +37,11 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label1.Font = new Font("Times New Roman", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            label1.Location = new Point(1, 42);
+            label1.Location = new Point(279, 42);
             label1.Name = "label1";
-            label1.Size = new Size(733, 59);
+            label1.Size = new Size(215, 59);
             label1.TabIndex = 0;
             label1.Text = "TRÒ CHƠI NIM";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -72,6 +73,7 @@
             textBoxLogin.Name = "textBoxLogin";
             textBoxLogin.Size = new Size(248, 23);
             textBoxLogin.TabIndex = 3;
+            textBoxLogin.TextChanged += textBoxLogin_TextChanged;
             // 
             // labelWaring
             // 
