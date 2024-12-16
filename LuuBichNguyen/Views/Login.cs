@@ -7,17 +7,37 @@ namespace LuuBichNguyen
 {
     public partial class Login : Form
     {
+        SFXButton sfxButton = new SFXButton();
         public Login()
         {
             InitializeComponent();
         }
 
-
-        private void buttonLogin_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            SoundPlayer sound = new SoundPlayer(@"D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\Resources\background sound.wav");
-            sound.Play();
 
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            labelWaring.Visible = false;
+        }
+
+
+        private void btnLogin_MouseHover(object sender, EventArgs e)
+        {
+            sfxButton.ButtonSelected();           
+            btnLogin.Image = Properties.Resources.Add_Pressed;
+        }
+
+        private void btnLogin_MouseLeave(object sender, EventArgs e)
+        {
+            btnLogin.Image = Properties.Resources.Add_Unpressed;
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            sfxButton.ButtonPressed();
             if (!string.IsNullOrWhiteSpace(textBoxLogin.Text))
             {
                 PlayerM.playerName = textBoxLogin.Text;
@@ -33,25 +53,17 @@ namespace LuuBichNguyen
                 labelWaring.Text = "Vui lòng nhập tên trước khi tiếp tục.";
                 labelWaring.Visible = true;
             }
-        }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-            labelWaring.Visible = false;
+           
         }
 
         private void textBoxLogin_TextChanged(object sender, EventArgs e)
         {
             if (textBoxLogin.Text.Length > 10)
             {
-                
+
                 textBoxLogin.Text = textBoxLogin.Text.Substring(0, 10);
-                textBoxLogin.SelectionStart = textBoxLogin.Text.Length; 
+                textBoxLogin.SelectionStart = textBoxLogin.Text.Length;
             }
 
             if (textBoxLogin.Text.Length == 10)

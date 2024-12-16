@@ -3,36 +3,48 @@
   "WorkspaceRootPath": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\luubichnguyen\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\luubichnguyen\\views\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\views\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|d:\\\u0111\u1ED3 \u00E1n\\nguy\u00EAn\\luubichnguyen\\luubichnguyen\\views\\gamenim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\views\\gamenim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|d:\\\u0111\u1ED3 \u00E1n\\nguy\u00EAn\\luubichnguyen\\luubichnguyen\\views\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\views\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\luubichnguyen\\views\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\views\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|d:\\\u0111\u1ED3 \u00E1n\\nguy\u00EAn\\luubichnguyen\\luubichnguyen\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|d:\\\u0111\u1ED3 \u00E1n\\nguy\u00EAn\\luubichnguyen\\luubichnguyen\\views\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\views\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\luubichnguyen\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|d:\\\u0111\u1ED3 \u00E1n\\nguy\u00EAn\\luubichnguyen\\luubichnguyen\\views\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\views\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|d:\\\u0111\u1ED3 \u00E1n\\nguy\u00EAn\\luubichnguyen\\luubichnguyen\\views\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\views\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|d:\\\u0111\u1ED3 \u00E1n\\nguy\u00EAn\\luubichnguyen\\luubichnguyen\\views\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\views\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\luubichnguyen\\views\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\views\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\luubichnguyen\\views\\gamenim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\views\\gamenim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|d:\\\u0111\u1ED3 \u00E1n\\nguy\u00EAn\\luubichnguyen\\luubichnguyen\\service\\sfxbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\service\\sfxbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|d:\\\u0111\u1ED3 \u00E1n\\nguy\u00EAn\\luubichnguyen\\luubichnguyen\\views\\gamenim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\views\\gamenim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|d:\\\u0111\u1ED3 \u00E1n\\nguy\u00EAn\\luubichnguyen\\luubichnguyen\\service\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\service\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\luubichnguyen\\views\\rock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\views\\rock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,37 +54,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Login.cs",
               "RelativeDocumentMoniker": "LuuBichNguyen\\Views\\Login.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Login.cs [Design]*",
-              "RelativeToolTip": "LuuBichNguyen\\Views\\Login.cs [Design]*",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Login.cs [Design]",
+              "RelativeToolTip": "LuuBichNguyen\\Views\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:59:57.905Z",
+              "WhenOpened": "2024-12-15T12:25:37.123Z",
               "IsPinned": true,
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Form1.cs",
-              "RelativeDocumentMoniker": "LuuBichNguyen\\Views\\Form1.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Form1.cs [Design]",
-              "RelativeToolTip": "LuuBichNguyen\\Views\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T14:19:05.245Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Setting.cs [Design]",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Setting.cs",
               "RelativeDocumentMoniker": "LuuBichNguyen\\Views\\Setting.cs",
@@ -85,7 +84,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
+              "Title": "Rock.cs [Design]",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Rock.cs",
+              "RelativeDocumentMoniker": "LuuBichNguyen\\Views\\Rock.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Rock.cs [Design]",
+              "RelativeToolTip": "LuuBichNguyen\\Views\\Rock.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T10:21:45.882Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "GameNim.cs [Design]",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\GameNim.cs",
               "RelativeDocumentMoniker": "LuuBichNguyen\\Views\\GameNim.cs",
@@ -93,59 +104,94 @@
               "RelativeToolTip": "LuuBichNguyen\\Views\\GameNim.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-13T17:52:36.763Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Setting.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Setting.cs",
-              "RelativeDocumentMoniker": "LuuBichNguyen\\Views\\Setting.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Setting.cs",
-              "RelativeToolTip": "LuuBichNguyen\\Views\\Setting.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAASwBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T16:53:07.312Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Form1.cs",
+              "RelativeDocumentMoniker": "LuuBichNguyen\\Views\\Form1.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Form1.cs [Design]",
+              "RelativeToolTip": "LuuBichNguyen\\Views\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T13:45:18.502Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "LuuBichNguyen\\Views\\Form1.Designer.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Form1.Designer.cs",
+              "RelativeToolTip": "LuuBichNguyen\\Views\\Form1.Designer.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAADgv5IAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T13:45:04.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Form1.cs",
               "RelativeDocumentMoniker": "LuuBichNguyen\\Views\\Form1.cs",
               "ToolTip": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Form1.cs",
               "RelativeToolTip": "LuuBichNguyen\\Views\\Form1.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAEoAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAAwGQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T12:02:40.53Z",
+              "WhenOpened": "2024-12-15T12:57:41.449Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Login.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Login.cs",
               "RelativeDocumentMoniker": "LuuBichNguyen\\Views\\Login.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Login.cs*",
-              "RelativeToolTip": "LuuBichNguyen\\Views\\Login.cs*",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAqwDcAAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Login.cs",
+              "RelativeToolTip": "LuuBichNguyen\\Views\\Login.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAADgvx0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T11:57:25.976Z",
+              "WhenOpened": "2024-12-15T12:41:42.244Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GameNim.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\GameNim.cs",
+              "RelativeDocumentMoniker": "LuuBichNguyen\\Views\\GameNim.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\GameNim.cs",
+              "RelativeToolTip": "LuuBichNguyen\\Views\\GameNim.cs",
+              "ViewState": "AgIAAL8AAAAAAAAAAAAqwOcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T12:38:06.944Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Program.cs",
-              "RelativeDocumentMoniker": "LuuBichNguyen\\Views\\Program.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Program.cs",
-              "RelativeToolTip": "LuuBichNguyen\\Views\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Title": "SFXButton.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Service\\SFXButton.cs",
+              "RelativeDocumentMoniker": "LuuBichNguyen\\Service\\SFXButton.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Service\\SFXButton.cs",
+              "RelativeToolTip": "LuuBichNguyen\\Service\\SFXButton.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T15:14:13.38Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-15T12:29:19.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Service\\GameManager.cs",
+              "RelativeDocumentMoniker": "LuuBichNguyen\\Service\\GameManager.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Service\\GameManager.cs",
+              "RelativeToolTip": "LuuBichNguyen\\Service\\GameManager.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAApwHQAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T12:38:13.11Z"
             }
           ]
         }

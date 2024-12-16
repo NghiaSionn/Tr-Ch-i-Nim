@@ -30,14 +30,16 @@
         {
             label1 = new Label();
             label2 = new Label();
-            buttonLogin = new Button();
             textBoxLogin = new TextBox();
             labelWaring = new Label();
+            btnLogin = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)btnLogin).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Times New Roman", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 163);
             label1.Location = new Point(279, 42);
             label1.Name = "label1";
@@ -49,7 +51,9 @@
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
             label2.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 163);
             label2.Location = new Point(181, 146);
             label2.Name = "label2";
@@ -57,18 +61,9 @@
             label2.TabIndex = 1;
             label2.Text = "Tên Người Chơi";
             // 
-            // buttonLogin
-            // 
-            buttonLogin.Location = new Point(298, 225);
-            buttonLogin.Name = "buttonLogin";
-            buttonLogin.Size = new Size(125, 33);
-            buttonLogin.TabIndex = 2;
-            buttonLogin.Text = "Đăng Nhập";
-            buttonLogin.UseVisualStyleBackColor = true;
-            buttonLogin.Click += buttonLogin_Click;
-            // 
             // textBoxLogin
             // 
+            textBoxLogin.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textBoxLogin.Location = new Point(279, 143);
             textBoxLogin.Name = "textBoxLogin";
             textBoxLogin.Size = new Size(248, 23);
@@ -77,28 +72,46 @@
             // 
             // labelWaring
             // 
+            labelWaring.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            labelWaring.BackColor = Color.Transparent;
             labelWaring.ForeColor = Color.Red;
-            labelWaring.Location = new Point(1, 169);
+            labelWaring.Location = new Point(0, 169);
             labelWaring.Name = "labelWaring";
-            labelWaring.Size = new Size(733, 23);
+            labelWaring.Size = new Size(734, 23);
             labelWaring.TabIndex = 4;
             labelWaring.Text = "label3";
             labelWaring.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // btnLogin
+            // 
+            btnLogin.BackColor = Color.Transparent;
+            btnLogin.Image = Properties.Resources.Add_Unpressed;
+            btnLogin.Location = new Point(313, 208);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(125, 43);
+            btnLogin.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnLogin.TabIndex = 6;
+            btnLogin.TabStop = false;
+            btnLogin.Click += btnLogin_Click;
+            btnLogin.MouseLeave += btnLogin_MouseLeave;
+            btnLogin.MouseHover += btnLogin_MouseHover;
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.istockphoto_1126081792_612x612;
             ClientSize = new Size(734, 311);
+            Controls.Add(btnLogin);
             Controls.Add(labelWaring);
             Controls.Add(textBoxLogin);
-            Controls.Add(buttonLogin);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Đăng Nhập";
             Load += Login_Load;
+            ((System.ComponentModel.ISupportInitialize)btnLogin).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -107,8 +120,8 @@
 
         private Label label1;
         private Label label2;
-        private Button buttonLogin;
         private TextBox textBoxLogin;
         private Label labelWaring;
+        private PictureBox btnLogin;
     }
 }

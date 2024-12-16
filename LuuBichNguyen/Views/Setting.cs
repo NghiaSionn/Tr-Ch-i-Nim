@@ -39,6 +39,12 @@ namespace LuuBichNguyen.Views
         {
             trackBar1.Value = saveAudio.TrackBarVolume;
 
+            if (Form1.wplayer != null)
+            {
+                Form1.wplayer.settings.volume = saveAudio.TrackBarVolume;
+                Form1.wplayer.controls.play();
+            }
+
         }
     }
 }
