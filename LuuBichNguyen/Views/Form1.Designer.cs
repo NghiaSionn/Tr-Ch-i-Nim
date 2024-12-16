@@ -32,19 +32,16 @@
             label1 = new Label();
             labelPlayerName = new Label();
             label2 = new Label();
-            buttonStart = new Button();
-            buttonSetting = new Button();
-            buttonExit = new Button();
             axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             panel1 = new Panel();
+            btnExit = new PictureBox();
+            btnOption = new PictureBox();
             btnStart = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)axWindowsMediaPlayer1).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)btnExit).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnOption).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnStart).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -78,38 +75,6 @@
             label2.Text = "TRÒ CHƠI NIM";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // buttonStart
-            // 
-            buttonStart.BackColor = Color.Transparent;
-            buttonStart.BackgroundImage = Properties.Resources.Add_Pressed;
-            buttonStart.Location = new Point(98, 100);
-            buttonStart.Name = "buttonStart";
-            buttonStart.Size = new Size(122, 42);
-            buttonStart.TabIndex = 3;
-            buttonStart.Text = "BẮT ĐẦU";
-            buttonStart.UseVisualStyleBackColor = false;
-            buttonStart.Click += buttonStart_Click;
-            // 
-            // buttonSetting
-            // 
-            buttonSetting.Location = new Point(98, 148);
-            buttonSetting.Name = "buttonSetting";
-            buttonSetting.Size = new Size(122, 42);
-            buttonSetting.TabIndex = 3;
-            buttonSetting.Text = "CÀI ĐẶT";
-            buttonSetting.UseVisualStyleBackColor = true;
-            buttonSetting.Click += buttonSetting_Click;
-            // 
-            // buttonExit
-            // 
-            buttonExit.Location = new Point(98, 196);
-            buttonExit.Name = "buttonExit";
-            buttonExit.Size = new Size(122, 42);
-            buttonExit.TabIndex = 3;
-            buttonExit.Text = "THOÁT";
-            buttonExit.UseVisualStyleBackColor = true;
-            buttonExit.Click += buttonExit_Click;
-            // 
             // axWindowsMediaPlayer1
             // 
             axWindowsMediaPlayer1.Enabled = true;
@@ -125,20 +90,48 @@
             panel1.BackColor = Color.Transparent;
             panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(btnExit);
             panel1.Controls.Add(label2);
-            panel1.Controls.Add(buttonStart);
-            panel1.Controls.Add(buttonExit);
-            panel1.Controls.Add(buttonSetting);
-            panel1.Location = new Point(203, 12);
+            panel1.Controls.Add(btnOption);
+            panel1.Controls.Add(btnStart);
+            panel1.Location = new Point(223, 26);
             panel1.Name = "panel1";
             panel1.Size = new Size(310, 287);
             panel1.TabIndex = 5;
+            // 
+            // btnExit
+            // 
+            btnExit.BackColor = Color.Transparent;
+            btnExit.Image = Properties.Resources.exit_normal;
+            btnExit.Location = new Point(109, 204);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(100, 50);
+            btnExit.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnExit.TabIndex = 6;
+            btnExit.TabStop = false;
+            btnExit.Click += btnExit_Click;
+            btnExit.MouseLeave += btnExit_Leave;
+            btnExit.MouseHover += btnExit_Hover;
+            // 
+            // btnOption
+            // 
+            btnOption.BackColor = Color.Transparent;
+            btnOption.Image = Properties.Resources.option_normal;
+            btnOption.Location = new Point(109, 148);
+            btnOption.Name = "btnOption";
+            btnOption.Size = new Size(100, 50);
+            btnOption.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnOption.TabIndex = 6;
+            btnOption.TabStop = false;
+            btnOption.Click += btnOption_Click;
+            btnOption.MouseLeave += btnOption_Leave;
+            btnOption.MouseHover += btnOption_Hover;
             // 
             // btnStart
             // 
             btnStart.BackColor = Color.Transparent;
             btnStart.Image = Properties.Resources.start_normal;
-            btnStart.Location = new Point(74, 123);
+            btnStart.Location = new Point(109, 92);
             btnStart.Name = "btnStart";
             btnStart.Size = new Size(100, 50);
             btnStart.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -148,37 +141,12 @@
             btnStart.MouseLeave += btnStart_Leave;
             btnStart.MouseHover += btnStart_Hover;
             // 
-            // pictureBox2
-            // 
-            pictureBox2.BackColor = Color.Transparent;
-            pictureBox2.Image = Properties.Resources.option_normal;
-            pictureBox2.Location = new Point(74, 179);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(100, 50);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 6;
-            pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.BackColor = Color.Transparent;
-            pictureBox3.Image = Properties.Resources.exit_normal;
-            pictureBox3.Location = new Point(74, 235);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(100, 50);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 6;
-            pictureBox3.TabStop = false;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.istockphoto_1126081792_612x612;
             ClientSize = new Size(734, 311);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureBox2);
-            Controls.Add(btnStart);
             Controls.Add(panel1);
             Controls.Add(axWindowsMediaPlayer1);
             Controls.Add(labelPlayerName);
@@ -188,9 +156,9 @@
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)axWindowsMediaPlayer1).EndInit();
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)btnExit).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnOption).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnStart).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -202,11 +170,10 @@
         private Label label2;
         private Button buttonStart;
         private Button buttonSetting;
-        private Button buttonExit;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
         private Panel panel1;
         private PictureBox btnStart;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
+        private PictureBox btnOption;
+        private PictureBox btnExit;
     }
 }

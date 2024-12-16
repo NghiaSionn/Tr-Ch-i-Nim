@@ -20,6 +20,7 @@ namespace LuuBichNguyen.Views
         private PictureBox selectedBagPictureBox = null;
         private List<PictureBox> rockPictureBoxes = new List<PictureBox>();
         private GameManager gameManager;
+        private Random random = new Random();
 
 
         public GameNim(List<BagRock> bags)
@@ -63,22 +64,18 @@ namespace LuuBichNguyen.Views
             labelTime.Text = $"{timeRemaining}s";
         }
 
-        private void OnCountdownFinished()
+        private async void OnCountdownFinished()
         {
-            gameManager.SwitchTurn();  
-
+            gameManager.SwitchTurn();
             UpdatePlayerTurnLabel();
 
             if (!gameManager.IsPlayer1Turn)
             {
-                
-                gameManager.AiTakeTurn(this);
-
-                StartCountdown();  
+                AITurnBack();
             }
             else
             {
-                StartCountdown(); 
+                StartCountdown();
             }
         }
 
@@ -290,6 +287,44 @@ namespace LuuBichNguyen.Views
                 UpdatePlayerTurnLabel();
             }
         }
+
+        private void AITurnBack()
+        {
+            if (rockPictureBoxes.Count == 0)
+            {
+                MessageBox.Show("Không còn sỏi trên màn hình.");
+                return;
+            }
+
+            // Tự động chọn ngẫu nhiên một viên sỏi từ danh sách rockPictureBoxes
+            int randomIndex = random.Next(rockPictureBoxes.Count);
+            PictureBox selectedRock = rockPictureBoxes[randomIndex];
+
+            // Hiển thông báo
+            MessageBox.Show("AI đã lấy sỏi!");
+
+            // Xóa sỏi khỏi giao diện và cập nhật danh sách rockPictureBoxes
+            this.Controls.Remove(selectedRock);
+            rockPictureBoxes.RemoveAt(randomIndex);
+
+            if (gameManager.CheckGameOver())
+            {
+                MessageBox.Show("Trò chơi kết thúc! AI thắng.");
+                Close();
+            }
+            else
+            {
+                gameManager.SwitchTurn();
+                UpdatePlayerTurnLabel();
+
+                // Tự động gọi AITurnBack sau một khoảng thời gian ngắn
+                Task.Delay(1000).ContinueWith(_ =>
+                {
+                    this.Invoke(new Action(AITurnBack));  // Gọi lại hàm AI tự động lấy sỏi sau delay
+                });
+            }
+        }
+
 
     }
 }

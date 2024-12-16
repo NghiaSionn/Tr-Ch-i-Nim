@@ -40,10 +40,16 @@ namespace LuuBichNguyen.Views
 
         }
 
-        private void buttonStart_Click(object sender, EventArgs e)
+        private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
         {
-            System.Media.SoundPlayer sound = new System.Media.SoundPlayer(@"D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\Resources\background sound.wav");
-            sound.Play();
+
+        }
+
+
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            sfxButton.ButtonPressed();
 
             DialogResult result = MessageBox.Show("Bạn có muốn bắt đầu?", "Xác nhận",
                                                     MessageBoxButtons.YesNo,
@@ -57,20 +63,51 @@ namespace LuuBichNguyen.Views
             }
         }
 
-        private void buttonSetting_Click(object sender, EventArgs e)
+        private void btnStart_Hover(object sender, EventArgs e)
         {
-            System.Media.SoundPlayer sound = new System.Media.SoundPlayer(@"D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\Resources\background sound.wav");
-            sound.Play();
+            sfxButton.ButtonSelected();
+            btnStart.Image = Properties.Resources.start_hover;
+        }
+
+        private void btnStart_Leave(object sender, EventArgs e)
+        {
+            btnStart.Image = Properties.Resources.start_normal;
+        }
+
+        private void btnOption_Click(object sender, EventArgs e)
+        {
+            sfxButton.ButtonPressed();
 
             Setting setting = new Setting();
             setting.ShowDialog();
 
         }
 
-        private void buttonExit_Click(object sender, EventArgs e)
+        private void btnOption_Hover(object sender, EventArgs e)
         {
-            System.Media.SoundPlayer sound = new System.Media.SoundPlayer(@"D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\Resources\background sound.wav");
-            sound.Play();
+            sfxButton.ButtonSelected();
+            btnOption.Image = Properties.Resources.option_hover;
+        }
+
+        private void btnOption_Leave(object sender, EventArgs e)
+        {
+            btnOption.Image = Properties.Resources.option_normal;
+        }
+
+        private void btnExit_Hover(object sender, EventArgs e)
+        {
+            sfxButton.ButtonSelected();
+            btnExit.Image = Properties.Resources.exit_hover;
+        }
+
+        private void btnExit_Leave(object sender, EventArgs e)
+        {
+            btnExit.Image = Properties.Resources.exit_normal;
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            sfxButton.ButtonPressed();
 
             DialogResult result = MessageBox.Show("Bạn có muốn thoát game không ?", "Xác nhận",
                                                     MessageBoxButtons.YesNo,
@@ -80,30 +117,6 @@ namespace LuuBichNguyen.Views
             {
                 System.Windows.Forms.Application.Exit();
             }
-
-        }
-
-        private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-        private void btnStart_Click(object sender, EventArgs e)
-        {
-            sfxButton.ButtonPressed();
-        }
-
-        private void btnStart_Hover(object sender, EventArgs e)
-        {
-            sfxButton.ButtonSelected();
-            //btnStart.Image = Properties.Resources.start_hover;
-        }
-
-        private void btnStart_Leave(object sender, EventArgs e)
-        {
-
         }
     }
 }

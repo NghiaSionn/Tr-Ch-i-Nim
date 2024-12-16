@@ -41,6 +41,7 @@
             // 
             // labelTime
             // 
+            labelTime.BackColor = Color.Transparent;
             labelTime.Font = new Font("Times New Roman", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 163);
             labelTime.Location = new Point(12, 9);
             labelTime.Name = "labelTime";
@@ -53,8 +54,9 @@
             // labelPlayer1
             // 
             labelPlayer1.AutoSize = true;
+            labelPlayer1.BackColor = Color.Transparent;
             labelPlayer1.Font = new Font("Times New Roman", 14.25F);
-            labelPlayer1.Location = new Point(68, 338);
+            labelPlayer1.Location = new Point(80, 312);
             labelPlayer1.Name = "labelPlayer1";
             labelPlayer1.Size = new Size(65, 21);
             labelPlayer1.TabIndex = 1;
@@ -64,8 +66,9 @@
             // labelPlayer2
             // 
             labelPlayer2.AutoSize = true;
+            labelPlayer2.BackColor = Color.Transparent;
             labelPlayer2.Font = new Font("Times New Roman", 14.25F);
-            labelPlayer2.Location = new Point(711, 338);
+            labelPlayer2.Location = new Point(663, 312);
             labelPlayer2.Name = "labelPlayer2";
             labelPlayer2.Size = new Size(29, 21);
             labelPlayer2.TabIndex = 2;
@@ -73,6 +76,7 @@
             // 
             // labelMess
             // 
+            labelMess.BackColor = Color.Transparent;
             labelMess.Location = new Point(12, 70);
             labelMess.Name = "labelMess";
             labelMess.Size = new Size(776, 15);
@@ -83,7 +87,7 @@
             // 
             // buttonTake
             // 
-            buttonTake.Location = new Point(366, 380);
+            buttonTake.Location = new Point(368, 336);
             buttonTake.Name = "buttonTake";
             buttonTake.Size = new Size(75, 23);
             buttonTake.TabIndex = 4;
@@ -102,7 +106,8 @@
             // labelHealth
             // 
             labelHealth.AutoSize = true;
-            labelHealth.Location = new Point(80, 377);
+            labelHealth.BackColor = Color.Transparent;
+            labelHealth.Location = new Point(93, 336);
             labelHealth.Name = "labelHealth";
             labelHealth.Size = new Size(38, 15);
             labelHealth.TabIndex = 6;
@@ -111,7 +116,8 @@
             // labelAIHealth
             // 
             labelAIHealth.AutoSize = true;
-            labelAIHealth.Location = new Point(709, 375);
+            labelAIHealth.BackColor = Color.Transparent;
+            labelAIHealth.Location = new Point(663, 336);
             labelAIHealth.Name = "labelAIHealth";
             labelAIHealth.Size = new Size(38, 15);
             labelAIHealth.TabIndex = 7;
@@ -121,7 +127,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackgroundImage = Properties.Resources.istockphoto_1126081792_612x612;
+            ClientSize = new Size(800, 402);
             Controls.Add(labelAIHealth);
             Controls.Add(labelHealth);
             Controls.Add(label1);

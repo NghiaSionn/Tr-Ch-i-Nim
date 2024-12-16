@@ -83,8 +83,8 @@ namespace LuuBichNguyen.Service
         {
             Task.Run(async () =>
             {
-                
-                int delayTime = random.Next(1000, 10000);  
+                // Delay từ 1 đến 10 giây để mô phỏng thời gian AI suy nghĩ
+                int delayTime = random.Next(1000, 10000);
                 await Task.Delay(delayTime);
 
                 var availableBags = bagRockList.Where(bag => bag.GetQuantity() > 0).ToList();
@@ -100,11 +100,15 @@ namespace LuuBichNguyen.Service
                 parentForm.Invoke(new Action(() =>
                 {
                     MessageBox.Show($"AI đã chọn túi với {randomBag.GetQuantity()} viên sỏi.");
+
                     var result = TakeRocksFromBag(randomBag);
 
                     if (result.TakenRocks > 0)
                     {
-                        MessageBox.Show($"AI đã lấy {result.TakenRocks} viên sỏi.");
+                        MessageBox.Show($"AI đã lấy {result.TakenRocks} viên sỏi. Số lượng còn lại: {result.RemainingRocks}.");
+
+                        // Xóa các PictureBox tương ứng khỏi giao diện
+                        RemoveRocksFromBag(randomBag, parentForm.Controls);
 
                         if (CheckGameOver())
                         {

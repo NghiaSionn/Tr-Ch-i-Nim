@@ -29,32 +29,23 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            buttonAcpect = new Button();
             textBoxInt = new TextBox();
             labelWaring = new Label();
+            btnAcepct = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)btnAcepct).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Times New Roman", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            label1.Location = new Point(279, 61);
+            label1.Location = new Point(257, 60);
             label1.Name = "label1";
-            label1.Size = new Size(242, 31);
+            label1.Size = new Size(290, 31);
             label1.TabIndex = 0;
-            label1.Text = "Nhập Số Lượng Sỏi";
+            label1.Text = "Nhập Số Lượng Túi Sỏi";
             label1.Click += label1_Click;
-            // 
-            // buttonAcpect
-            // 
-            buttonAcpect.Font = new Font("Microsoft Sans Serif", 8.25F);
-            buttonAcpect.Location = new Point(361, 228);
-            buttonAcpect.Name = "buttonAcpect";
-            buttonAcpect.Size = new Size(75, 23);
-            buttonAcpect.TabIndex = 1;
-            buttonAcpect.Text = "Xác Nhận";
-            buttonAcpect.UseVisualStyleBackColor = true;
-            buttonAcpect.Click += buttonAcpect_Click;
             // 
             // textBoxInt
             // 
@@ -66,6 +57,7 @@
             // 
             // labelWaring
             // 
+            labelWaring.BackColor = Color.Transparent;
             labelWaring.ForeColor = Color.Red;
             labelWaring.Location = new Point(0, 181);
             labelWaring.Name = "labelWaring";
@@ -75,19 +67,35 @@
             labelWaring.TextAlign = ContentAlignment.MiddleCenter;
             labelWaring.Click += labelWaring_Click;
             // 
+            // btnAcepct
+            // 
+            btnAcepct.BackColor = Color.Transparent;
+            btnAcepct.Image = Properties.Resources.Add_Unpressed;
+            btnAcepct.Location = new Point(353, 225);
+            btnAcepct.Name = "btnAcepct";
+            btnAcepct.Size = new Size(91, 30);
+            btnAcepct.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnAcepct.TabIndex = 4;
+            btnAcepct.TabStop = false;
+            btnAcepct.Click += btnAcepct_Click;
+            btnAcepct.MouseLeave += btnAcepct_Leave;
+            btnAcepct.MouseHover += btnAcepct_Hover;
+            // 
             // Rock
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.istockphoto_1126081792_612x612;
             ClientSize = new Size(800, 368);
+            Controls.Add(btnAcepct);
             Controls.Add(labelWaring);
             Controls.Add(textBoxInt);
-            Controls.Add(buttonAcpect);
             Controls.Add(label1);
             Name = "Rock";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Rock";
             Load += Rock_Load;
+            ((System.ComponentModel.ISupportInitialize)btnAcepct).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -95,8 +103,8 @@
         #endregion
 
         private Label label1;
-        private Button buttonAcpect;
         private TextBox textBoxInt;
         private Label labelWaring;
+        private PictureBox btnAcepct;
     }
 }

@@ -93,6 +93,16 @@ namespace LuuBichNguyen.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exit_hover {
+            get {
+                object obj = ResourceManager.GetObject("exit_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap exit_normal {
             get {
                 object obj = ResourceManager.GetObject("exit_normal", resourceCulture);
@@ -113,6 +123,26 @@ namespace LuuBichNguyen.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap option_hover {
+            get {
+                object obj = ResourceManager.GetObject("option_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap option_menu {
+            get {
+                object obj = ResourceManager.GetObject("option_menu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap option_normal {
             get {
                 object obj = ResourceManager.GetObject("option_normal", resourceCulture);
@@ -126,6 +156,16 @@ namespace LuuBichNguyen.Properties {
         internal static System.Drawing.Bitmap Pink_Buttons_Icons___Copy {
             get {
                 object obj = ResourceManager.GetObject("Pink Buttons Icons - Copy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap start_hover {
+            get {
+                object obj = ResourceManager.GetObject("start_hover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

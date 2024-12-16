@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             trackBar1 = new TrackBar();
-            label1 = new Label();
             labelMusic = new Label();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // trackBar1
             // 
-            trackBar1.Location = new Point(173, 127);
+            trackBar1.Location = new Point(120, 136);
             trackBar1.Maximum = 100;
             trackBar1.Name = "trackBar1";
             trackBar1.Size = new Size(425, 45);
@@ -44,48 +45,49 @@
             trackBar1.Value = 100;
             trackBar1.Scroll += trackBar1_Scroll;
             // 
-            // label1
-            // 
-            label1.Font = new Font("Times New Roman", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            label1.Location = new Point(0, 30);
-            label1.Name = "label1";
-            label1.Size = new Size(735, 61);
-            label1.TabIndex = 1;
-            label1.Text = "CÀI ĐẶT";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
-            label1.Click += label1_Click;
-            // 
             // labelMusic
             // 
             labelMusic.AutoSize = true;
             labelMusic.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 163);
-            labelMusic.Location = new Point(95, 127);
+            labelMusic.Location = new Point(42, 146);
             labelMusic.Name = "labelMusic";
             labelMusic.Size = new Size(72, 19);
             labelMusic.TabIndex = 2;
             labelMusic.Text = "Âm Thanh";
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Transparent;
+            panel1.BackgroundImage = Properties.Resources.option_menu;
+            panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(labelMusic);
+            panel1.Controls.Add(trackBar1);
+            panel1.Location = new Point(69, 17);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(585, 282);
+            panel1.TabIndex = 3;
+            // 
             // Setting
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.istockphoto_1126081792_612x612;
             ClientSize = new Size(734, 311);
-            Controls.Add(labelMusic);
-            Controls.Add(label1);
-            Controls.Add(trackBar1);
+            Controls.Add(panel1);
             Name = "Setting";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Setting";
             Load += Setting_Load;
             ((System.ComponentModel.ISupportInitialize)trackBar1).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private TrackBar trackBar1;
-        private Label label1;
         private Label labelMusic;
+        private Panel panel1;
     }
 }
