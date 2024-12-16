@@ -4,6 +4,9 @@
     <Compile Update="Views\GameNim.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\GameOver.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\Login.cs">
       <SubType>Form</SubType>
     </Compile>

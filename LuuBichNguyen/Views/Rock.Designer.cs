@@ -40,18 +40,19 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Times New Roman", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            label1.Location = new Point(257, 60);
+            label1.Location = new Point(294, 80);
             label1.Name = "label1";
-            label1.Size = new Size(290, 31);
+            label1.Size = new Size(362, 38);
             label1.TabIndex = 0;
             label1.Text = "Nhập Số Lượng Túi Sỏi";
             label1.Click += label1_Click;
             // 
             // textBoxInt
             // 
-            textBoxInt.Location = new Point(235, 155);
+            textBoxInt.Location = new Point(269, 207);
+            textBoxInt.Margin = new Padding(3, 4, 3, 4);
             textBoxInt.Name = "textBoxInt";
-            textBoxInt.Size = new Size(332, 23);
+            textBoxInt.Size = new Size(379, 27);
             textBoxInt.TabIndex = 2;
             textBoxInt.TextChanged += textBoxInt_TextChanged;
             // 
@@ -59,9 +60,9 @@
             // 
             labelWaring.BackColor = Color.Transparent;
             labelWaring.ForeColor = Color.Red;
-            labelWaring.Location = new Point(0, 181);
+            labelWaring.Location = new Point(0, 241);
             labelWaring.Name = "labelWaring";
-            labelWaring.Size = new Size(800, 23);
+            labelWaring.Size = new Size(914, 31);
             labelWaring.TabIndex = 3;
             labelWaring.Text = "label2";
             labelWaring.TextAlign = ContentAlignment.MiddleCenter;
@@ -71,9 +72,10 @@
             // 
             btnAcepct.BackColor = Color.Transparent;
             btnAcepct.Image = Properties.Resources.Add_Unpressed;
-            btnAcepct.Location = new Point(353, 225);
+            btnAcepct.Location = new Point(403, 300);
+            btnAcepct.Margin = new Padding(3, 4, 3, 4);
             btnAcepct.Name = "btnAcepct";
-            btnAcepct.Size = new Size(91, 30);
+            btnAcepct.Size = new Size(104, 40);
             btnAcepct.SizeMode = PictureBoxSizeMode.StretchImage;
             btnAcepct.TabIndex = 4;
             btnAcepct.TabStop = false;
@@ -83,14 +85,15 @@
             // 
             // Rock
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.istockphoto_1126081792_612x612;
-            ClientSize = new Size(800, 368);
+            ClientSize = new Size(914, 372);
             Controls.Add(btnAcepct);
             Controls.Add(labelWaring);
             Controls.Add(textBoxInt);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Rock";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Rock";

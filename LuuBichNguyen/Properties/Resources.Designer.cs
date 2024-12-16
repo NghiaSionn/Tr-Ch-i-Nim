@@ -113,9 +113,39 @@ namespace LuuBichNguyen.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap home_hover {
+            get {
+                object obj = ResourceManager.GetObject("home_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap istockphoto_1126081792_612x612 {
             get {
                 object obj = ResourceManager.GetObject("istockphoto-1126081792-612x612", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_894592700_612x612 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-894592700-612x612", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menu_Buttons_sprite__BnW____Copy {
+            get {
+                object obj = ResourceManager.GetObject("Menu Buttons sprite (BnW) - Copy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,6 +186,56 @@ namespace LuuBichNguyen.Properties {
         internal static System.Drawing.Bitmap Pink_Buttons_Icons___Copy {
             get {
                 object obj = ResourceManager.GetObject("Pink Buttons Icons - Copy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_game_over_screen_pixel_text_effect_png_image_2912021 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-game-over-screen-pixel-text-effect-png-image_2912021", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap quit_hover {
+            get {
+                object obj = ResourceManager.GetObject("quit_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap quit_normal {
+            get {
+                object obj = ResourceManager.GetObject("quit_normal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap restart_hover {
+            get {
+                object obj = ResourceManager.GetObject("restart_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap restart_normal {
+            get {
+                object obj = ResourceManager.GetObject("restart_normal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

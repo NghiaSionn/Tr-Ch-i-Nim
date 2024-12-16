@@ -64,20 +64,32 @@ namespace LuuBichNguyen.Views
             labelTime.Text = $"{timeRemaining}s";
         }
 
-        private async void OnCountdownFinished()
+        private void OnCountdownFinished()
         {
+            if (gameManager.IsPlayer1Turn)
+            {
+                MessageBox.Show($"{PlayerM.playerName} hết thời gian! Chuyển lượt cho đối thủ.");
+            }
+            else
+            {
+                MessageBox.Show("AI hết thời gian! Lượt của người chơi.");
+            }
+
             gameManager.SwitchTurn();
             UpdatePlayerTurnLabel();
 
             if (!gameManager.IsPlayer1Turn)
             {
-                AITurnBack();
+                MessageBox.Show("Lượt của AI!");
+                gameManager.AITurn(this);
             }
             else
             {
                 StartCountdown();
             }
         }
+
+
 
 
 
@@ -114,7 +126,7 @@ namespace LuuBichNguyen.Views
                 bagPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                 bagPictureBox.Width = bagWidth;
                 bagPictureBox.Height = 50;
-                bagPictureBox.Image = Image.FromFile(@"D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\Resources\business-bag.png");
+                bagPictureBox.Image = Image.FromFile(@"D:\Tr-Ch-i-Nim\LuuBichNguyen\Resources\business-bag.png");
                 bagPictureBox.Location = new Point(x, y);
 
                 bagPictureBox.Tag = bag.GetQuantity();
@@ -154,9 +166,13 @@ namespace LuuBichNguyen.Views
         {
             foreach (Control control in this.Controls.OfType<PictureBox>())
             {
-                control.Visible = isVisible;
+                if (control != selectedBagPictureBox) 
+                {
+                    control.Visible = isVisible;
+                }
             }
         }
+
 
 
         private void DisplayRocksInSelectedBag()
@@ -181,7 +197,7 @@ namespace LuuBichNguyen.Views
                 rockPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                 rockPictureBox.Width = 30;
                 rockPictureBox.Height = 30;
-                rockPictureBox.Image = Image.FromFile(@"D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\Resources\rocks-export.png");
+                rockPictureBox.Image = Image.FromFile(@"D:\Tr-Ch-i-Nim\LuuBichNguyen\Resources\rocks-export.png");
 
                 int xPosition = 50 + i * (30 + padding);
 
@@ -195,11 +211,6 @@ namespace LuuBichNguyen.Views
 
         public void ChoseCoins()
         {
-            if (!isPlayer1Turn)
-            {
-                MessageBox.Show("Không đến lượt bạn.");
-                return;
-            }
 
             DialogResult result = MessageBox.Show("Chọn mặt đồng xu: Sấp?", "Chọn mặt đồng xu", MessageBoxButtons.YesNo);
 
@@ -210,17 +221,20 @@ namespace LuuBichNguyen.Views
             {
                 labelMess.Visible = true;
                 MessageBox.Show($"Kết quả tung đồng xu là {coinResult}. {PlayerM.playerName} được đi tiếp!");
-                // Không chuyển lượt vì người chơi đã thắng
+
                 StartCountdown();
             }
             else
             {
                 labelMess.Visible = true;
                 MessageBox.Show($"Kết quả tung đồng xu là {coinResult}. Lượt đối thủ.");
-                gameManager.SwitchTurn();
+                
                 UpdatePlayerTurnLabel();
+                gameManager.AITurn(this);
+                gameManager.SwitchTurn();
 
                 StartCountdown();
+                
             }
         }
 
@@ -231,8 +245,10 @@ namespace LuuBichNguyen.Views
             labelMess.Visible = true;
             labelMess.Text = gameManager.IsPlayer1Turn ? $"Lượt {PlayerM.playerName}" : "Lượt đối thủ";
 
+
             buttonTake.Visible = gameManager.IsPlayer1Turn;
         }
+
 
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
@@ -261,69 +277,38 @@ namespace LuuBichNguyen.Views
 
             MessageBox.Show(result.Message);
 
-            selectedBagPictureBox.Tag = result.RemainingRocks;
-
-            // Xoá các PictureBox sỏi đã được lấy khỏi giao diện
-            int rocksToRemove = numRocks - result.RemainingRocks;
-            for (int i = 0; i < rocksToRemove; i++)
-            {
-                if (rockPictureBoxes.Count > i)
-                {
-                    PictureBox rockToRemove = rockPictureBoxes[i];
-                    this.Controls.Remove(rockToRemove);
-                }
-            }
-
-            rockPictureBoxes.RemoveRange(0, rocksToRemove);
+            // Cập nhật giao diện
+            UpdateBagVisibility(true);
+            DisplayBagContents();
 
             if (gameManager.CheckGameOver())
             {
-                MessageBox.Show("Trò chơi đã kết thúc!");
-                Close();
-            }
-            else
-            {
-                gameManager.SwitchTurn();
-                UpdatePlayerTurnLabel();
-            }
-        }
-
-        private void AITurnBack()
-        {
-            if (rockPictureBoxes.Count == 0)
-            {
-                MessageBox.Show("Không còn sỏi trên màn hình.");
+                MessageBox.Show($"{PlayerM.playerName} thắng!");
+                this.Close();
                 return;
             }
 
-            // Tự động chọn ngẫu nhiên một viên sỏi từ danh sách rockPictureBoxes
-            int randomIndex = random.Next(rockPictureBoxes.Count);
-            PictureBox selectedRock = rockPictureBoxes[randomIndex];
+            // Chuyển lượt
+            gameManager.SwitchTurn();
+            UpdatePlayerTurnLabel();
 
-            // Hiển thông báo
-            MessageBox.Show("AI đã lấy sỏi!");
-
-            // Xóa sỏi khỏi giao diện và cập nhật danh sách rockPictureBoxes
-            this.Controls.Remove(selectedRock);
-            rockPictureBoxes.RemoveAt(randomIndex);
-
-            if (gameManager.CheckGameOver())
+            
+            if (!gameManager.IsPlayer1Turn)
             {
-                MessageBox.Show("Trò chơi kết thúc! AI thắng.");
-                Close();
-            }
-            else
-            {
-                gameManager.SwitchTurn();
-                UpdatePlayerTurnLabel();
-
-                // Tự động gọi AITurnBack sau một khoảng thời gian ngắn
-                Task.Delay(1000).ContinueWith(_ =>
-                {
-                    this.Invoke(new Action(AITurnBack));  // Gọi lại hàm AI tự động lấy sỏi sau delay
-                });
+                gameManager.AITurn(this);
             }
         }
+
+
+        private void AITurnBack()
+        {
+            MessageBox.Show("Đây là lượt của AI");
+
+            // Xử lý logic chơi của AI
+            gameManager.SwitchTurn();
+            UpdatePlayerTurnLabel();
+        }
+
 
 
     }

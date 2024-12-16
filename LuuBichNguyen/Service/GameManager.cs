@@ -12,6 +12,7 @@ namespace LuuBichNguyen.Service
     {
         private List<BagRock> bagRockList;
         private Random random = new Random();
+        GameOver gameOver = new GameOver();
         public bool IsPlayer1Turn { get; private set; } = true;
 
 
@@ -27,8 +28,20 @@ namespace LuuBichNguyen.Service
             public string Message { get; set; }
         }
 
-        public TakeRocksResult TakeRocksFromBag(BagRock bag)
+        public TakeRocksResult TakeRocksFromBag(int selectedBagIndex)
         {
+            if (selectedBagIndex < 0 || selectedBagIndex >= bagRockList.Count)
+            {
+                return new TakeRocksResult
+                {
+                    TakenRocks = 0,
+                    RemainingRocks = 0,
+                    Message = "Không tìm thấy túi đá."
+                };
+            }
+
+            var bag = bagRockList[selectedBagIndex];
+
             if (bag.GetQuantity() <= 0)
             {
                 return new TakeRocksResult
@@ -39,10 +52,7 @@ namespace LuuBichNguyen.Service
                 };
             }
 
-            // Random số lượng sỏi được lấy (từ 1 đến số lượng hiện có)
             int rocksToTake = random.Next(1, bag.GetQuantity() + 1);
-
-            // Cập nhật số lượng còn lại
             int newQuantity = bag.GetQuantity() - rocksToTake;
             bag.SetQuantity(newQuantity);
 
@@ -50,7 +60,7 @@ namespace LuuBichNguyen.Service
             {
                 TakenRocks = rocksToTake,
                 RemainingRocks = newQuantity,
-                Message = $"Đã lấy {rocksToTake} viên sỏi. Số lượng còn lại: {newQuantity}."
+                Message = $"AI đã lấy {rocksToTake} viên sỏi từ túi {selectedBagIndex + 1}. Số lượng còn lại: {newQuantity}."
             };
         }
 
@@ -73,56 +83,41 @@ namespace LuuBichNguyen.Service
         public bool CheckGameOver()
         {
             return bagRockList.All(bag => bag.GetQuantity() == 0);
+            gameOver.Show();
+            
         }
         public void SwitchTurn()
         {
             IsPlayer1Turn = !IsPlayer1Turn;
         }
 
-        public void AiTakeTurn(Form parentForm)
+        public void AITurn(int selectedBagIndex, Form parentForm)
         {
-            Task.Run(async () =>
+            // Lấy đá từ túi được người chơi chọn
+            var result = TakeRocksFromBag(selectedBagIndex);
+
+            if (result.TakenRocks > 0)
             {
-                // Delay từ 1 đến 10 giây để mô phỏng thời gian AI suy nghĩ
-                int delayTime = random.Next(1000, 10000);
-                await Task.Delay(delayTime);
+                MessageBox.Show($"AI đã lấy {result.TakenRocks} viên sỏi từ túi {selectedBagIndex + 1}. Số lượng còn lại trong túi: {result.RemainingRocks}.");
 
-                var availableBags = bagRockList.Where(bag => bag.GetQuantity() > 0).ToList();
-
-                if (availableBags.Count == 0)
+                // Kiểm tra kết thúc trò chơi
+                if (CheckGameOver())
                 {
-                    MessageBox.Show("Không còn túi sỏi!");
+                    MessageBox.Show("Trò chơi kết thúc! AI thắng!");
+                    parentForm.Close();
                     return;
                 }
 
-                var randomBag = availableBags[random.Next(availableBags.Count)];
-
-                parentForm.Invoke(new Action(() =>
-                {
-                    MessageBox.Show($"AI đã chọn túi với {randomBag.GetQuantity()} viên sỏi.");
-
-                    var result = TakeRocksFromBag(randomBag);
-
-                    if (result.TakenRocks > 0)
-                    {
-                        MessageBox.Show($"AI đã lấy {result.TakenRocks} viên sỏi. Số lượng còn lại: {result.RemainingRocks}.");
-
-                        // Xóa các PictureBox tương ứng khỏi giao diện
-                        RemoveRocksFromBag(randomBag, parentForm.Controls);
-
-                        if (CheckGameOver())
-                        {
-                            MessageBox.Show("Trò chơi kết thúc! AI thắng!");
-                            parentForm.Close();
-                            return;
-                        }
-
-                        SwitchTurn();
-                        ((GameNim)parentForm).UpdatePlayerTurnLabel();
-                    }
-                }));
-            });
+                // Chuyển lượt sang người chơi
+                SwitchTurn();
+            }
+            else
+            {
+                MessageBox.Show("Túi đã hết sỏi nhỏ để lấy!");
+            }
         }
+
+
 
     }
 }

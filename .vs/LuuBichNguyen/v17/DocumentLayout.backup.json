@@ -1,30 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\",
+  "WorkspaceRootPath": "D:\\Tr-Ch-i-Nim\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|d:\\\u0111\u1ED3 \u00E1n\\nguy\u00EAn\\luubichnguyen\\luubichnguyen\\views\\gamenim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|d:\\tr-ch-i-nim\\luubichnguyen\\views\\gamenim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\views\\gamenim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|d:\\\u0111\u1ED3 \u00E1n\\nguy\u00EAn\\luubichnguyen\\luubichnguyen\\service\\sfxbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\service\\sfxbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\luubichnguyen\\views\\gamenim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\views\\gamenim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|d:\\\u0111\u1ED3 \u00E1n\\nguy\u00EAn\\luubichnguyen\\luubichnguyen\\service\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|d:\\tr-ch-i-nim\\luubichnguyen\\service\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\service\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|d:\\\u0111\u1ED3 \u00E1n\\nguy\u00EAn\\luubichnguyen\\luubichnguyen\\views\\rock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\views\\rock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|D:\\Tr-Ch-i-Nim\\luubichnguyen\\views\\rock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\views\\rock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|d:\\\u0111\u1ED3 \u00E1n\\nguy\u00EAn\\luubichnguyen\\luubichnguyen\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|D:\\Tr-Ch-i-Nim\\luubichnguyen\\views\\gamenim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C6B7ED29-0865-4331-98C1-0FA69179A22B}|LuuBichNguyen\\LuuBichNguyen.csproj|solutionrelative:luubichnguyen\\views\\gamenim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,89 +26,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GameNim.cs [Design]",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\GameNim.cs",
-              "RelativeDocumentMoniker": "LuuBichNguyen\\Views\\GameNim.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\GameNim.cs [Design]",
-              "RelativeToolTip": "LuuBichNguyen\\Views\\GameNim.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T17:52:36.763Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Rock.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Rock.cs",
-              "RelativeDocumentMoniker": "LuuBichNguyen\\Views\\Rock.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Rock.cs",
-              "RelativeToolTip": "LuuBichNguyen\\Views\\Rock.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAqwCMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T07:36:45.832Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Login.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Login.cs",
-              "RelativeDocumentMoniker": "LuuBichNguyen\\Views\\Login.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\Login.cs",
-              "RelativeToolTip": "LuuBichNguyen\\Views\\Login.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAADgvycAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T12:41:42.244Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Service\\GameManager.cs",
-              "RelativeDocumentMoniker": "LuuBichNguyen\\Service\\GameManager.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Service\\GameManager.cs",
-              "RelativeToolTip": "LuuBichNguyen\\Service\\GameManager.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAAAE4AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T12:38:13.11Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SFXButton.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Service\\SFXButton.cs",
-              "RelativeDocumentMoniker": "LuuBichNguyen\\Service\\SFXButton.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Service\\SFXButton.cs",
-              "RelativeToolTip": "LuuBichNguyen\\Service\\SFXButton.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\Tr-Ch-i-Nim\\LuuBichNguyen\\Service\\GameManager.cs",
+              "RelativeDocumentMoniker": "LuuBichNguyen\\Service\\GameManager.cs",
+              "ToolTip": "D:\\Tr-Ch-i-Nim\\LuuBichNguyen\\Service\\GameManager.cs",
+              "RelativeToolTip": "LuuBichNguyen\\Service\\GameManager.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAmwEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T12:29:19.692Z",
+              "WhenOpened": "2024-12-16T12:38:06.024Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "GameNim.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\GameNim.cs",
+              "DocumentMoniker": "D:\\Tr-Ch-i-Nim\\LuuBichNguyen\\Views\\GameNim.cs",
               "RelativeDocumentMoniker": "LuuBichNguyen\\Views\\GameNim.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n\\Nguy\u00EAn\\LuuBichNguyen\\LuuBichNguyen\\Views\\GameNim.cs",
+              "ToolTip": "D:\\Tr-Ch-i-Nim\\LuuBichNguyen\\Views\\GameNim.cs",
               "RelativeToolTip": "LuuBichNguyen\\Views\\GameNim.cs",
-              "ViewState": "AgIAACABAAAAAAAAAAAkwEoBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0BAAAAAAAAAAAkwDsBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T12:38:06.944Z",
+              "WhenOpened": "2024-12-16T12:12:21.981Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Rock.cs [Design]",
+              "DocumentMoniker": "D:\\Tr-Ch-i-Nim\\LuuBichNguyen\\Views\\Rock.cs",
+              "RelativeDocumentMoniker": "LuuBichNguyen\\Views\\Rock.cs",
+              "ToolTip": "D:\\Tr-Ch-i-Nim\\LuuBichNguyen\\Views\\Rock.cs [Design]",
+              "RelativeToolTip": "LuuBichNguyen\\Views\\Rock.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T12:11:59.892Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameNim.cs [Design]",
+              "DocumentMoniker": "D:\\Tr-Ch-i-Nim\\LuuBichNguyen\\Views\\GameNim.cs",
+              "RelativeDocumentMoniker": "LuuBichNguyen\\Views\\GameNim.cs",
+              "ToolTip": "D:\\Tr-Ch-i-Nim\\LuuBichNguyen\\Views\\GameNim.cs [Design]",
+              "RelativeToolTip": "LuuBichNguyen\\Views\\GameNim.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T11:18:00.258Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

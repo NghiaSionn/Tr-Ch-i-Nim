@@ -47,9 +47,9 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(392, 112);
+            label1.Location = new Point(448, 149);
             label1.Name = "label1";
-            label1.Size = new Size(0, 15);
+            label1.Size = new Size(0, 20);
             label1.TabIndex = 0;
             // 
             // labelPlayerName
@@ -58,7 +58,7 @@
             labelPlayerName.Font = new Font("Times New Roman", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 163);
             labelPlayerName.Location = new Point(0, -1);
             labelPlayerName.Name = "labelPlayerName";
-            labelPlayerName.Size = new Size(732, 64);
+            labelPlayerName.Size = new Size(837, 85);
             labelPlayerName.TabIndex = 1;
             labelPlayerName.Text = "label2";
             labelPlayerName.Click += labelPlayerName_Click;
@@ -68,9 +68,9 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Times New Roman", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 163);
             label2.ImageAlign = ContentAlignment.BottomCenter;
-            label2.Location = new Point(-179, 32);
+            label2.Location = new Point(-205, 43);
             label2.Name = "label2";
-            label2.Size = new Size(681, 59);
+            label2.Size = new Size(778, 79);
             label2.TabIndex = 2;
             label2.Text = "TRÒ CHƠI NIM";
             label2.TextAlign = ContentAlignment.MiddleCenter;
@@ -79,6 +79,7 @@
             // 
             axWindowsMediaPlayer1.Enabled = true;
             axWindowsMediaPlayer1.Location = new Point(24, 53);
+            axWindowsMediaPlayer1.Margin = new Padding(3, 4, 3, 4);
             axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             axWindowsMediaPlayer1.OcxState = (AxHost.State)resources.GetObject("axWindowsMediaPlayer1.OcxState");
             axWindowsMediaPlayer1.Size = new Size(75, 23);
@@ -94,18 +95,20 @@
             panel1.Controls.Add(label2);
             panel1.Controls.Add(btnOption);
             panel1.Controls.Add(btnStart);
-            panel1.Location = new Point(223, 26);
+            panel1.Location = new Point(260, 37);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(310, 287);
+            panel1.Size = new Size(354, 365);
             panel1.TabIndex = 5;
             // 
             // btnExit
             // 
             btnExit.BackColor = Color.Transparent;
             btnExit.Image = Properties.Resources.exit_normal;
-            btnExit.Location = new Point(109, 204);
+            btnExit.Location = new Point(125, 272);
+            btnExit.Margin = new Padding(3, 4, 3, 4);
             btnExit.Name = "btnExit";
-            btnExit.Size = new Size(100, 50);
+            btnExit.Size = new Size(114, 67);
             btnExit.SizeMode = PictureBoxSizeMode.StretchImage;
             btnExit.TabIndex = 6;
             btnExit.TabStop = false;
@@ -117,9 +120,10 @@
             // 
             btnOption.BackColor = Color.Transparent;
             btnOption.Image = Properties.Resources.option_normal;
-            btnOption.Location = new Point(109, 148);
+            btnOption.Location = new Point(125, 197);
+            btnOption.Margin = new Padding(3, 4, 3, 4);
             btnOption.Name = "btnOption";
-            btnOption.Size = new Size(100, 50);
+            btnOption.Size = new Size(114, 67);
             btnOption.SizeMode = PictureBoxSizeMode.StretchImage;
             btnOption.TabIndex = 6;
             btnOption.TabStop = false;
@@ -131,9 +135,10 @@
             // 
             btnStart.BackColor = Color.Transparent;
             btnStart.Image = Properties.Resources.start_normal;
-            btnStart.Location = new Point(109, 92);
+            btnStart.Location = new Point(125, 123);
+            btnStart.Margin = new Padding(3, 4, 3, 4);
             btnStart.Name = "btnStart";
-            btnStart.Size = new Size(100, 50);
+            btnStart.Size = new Size(114, 67);
             btnStart.SizeMode = PictureBoxSizeMode.StretchImage;
             btnStart.TabIndex = 6;
             btnStart.TabStop = false;
@@ -143,14 +148,15 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.istockphoto_1126081792_612x612;
-            ClientSize = new Size(734, 311);
+            ClientSize = new Size(839, 403);
             Controls.Add(panel1);
             Controls.Add(axWindowsMediaPlayer1);
             Controls.Add(labelPlayerName);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Load += Form1_Load;
