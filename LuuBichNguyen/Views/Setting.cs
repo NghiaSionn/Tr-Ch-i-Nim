@@ -14,6 +14,11 @@ namespace LuuBichNguyen.Views
 {
     public partial class Setting : Form
     {
+
+       
+
+
+        SFXButton sfxButton = new SFXButton();
         public Setting()
         {
             InitializeComponent();
@@ -22,7 +27,7 @@ namespace LuuBichNguyen.Views
         private SaveAudio saveAudio = new SaveAudio();
 
         private void trackBar1_Scroll(object sender, EventArgs e)
-        {            
+        {
             Form1.wplayer.controls.play();
             Form1.wplayer.settings.volume = trackBar1.Value;
 
@@ -45,6 +50,26 @@ namespace LuuBichNguyen.Views
                 Form1.wplayer.controls.play();
             }
 
+        }
+
+        private void btnPause_Click(object sender, EventArgs e)
+        {
+            sfxButton.ButtonPressed();
+            
+            this.Close();
+
+        }
+
+        private void btnPause_Hover(object sender, EventArgs e)
+        {
+            sfxButton.ButtonSelected();
+
+            btnPause.Image = Properties.Resources.Menu_Buttons_sprite__Colored_;
+        }
+
+        private void btnPause_Leave(object sender, EventArgs e)
+        {
+            btnPause.Image = Properties.Resources.Menu_Buttons_sprite__BnW_;
         }
     }
 }

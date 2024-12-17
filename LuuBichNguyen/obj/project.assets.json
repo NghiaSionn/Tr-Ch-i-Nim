@@ -9,19 +9,19 @@
   },
   "packageFolders": {
     "C:\\Users\\nghia\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "D:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Tr-Ch-i-Nim\\LuuBichNguyen\\LuuBichNguyen.csproj",
+      "projectUniqueName": "D:\\Đồ án\\Nguyên\\LuuBichNguyen\\LuuBichNguyen\\LuuBichNguyen.csproj",
       "projectName": "LuuBichNguyen",
-      "projectPath": "D:\\Tr-Ch-i-Nim\\LuuBichNguyen\\LuuBichNguyen.csproj",
+      "projectPath": "D:\\Đồ án\\Nguyên\\LuuBichNguyen\\LuuBichNguyen\\LuuBichNguyen.csproj",
       "packagesPath": "C:\\Users\\nghia\\.nuget\\packages\\",
-      "outputPath": "D:\\Tr-Ch-i-Nim\\LuuBichNguyen\\obj\\",
+      "outputPath": "D:\\Đồ án\\Nguyên\\LuuBichNguyen\\LuuBichNguyen\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\nghia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -49,7 +49,7 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
+        "auditMode": "direct"
       },
       "SdkAnalysisLevel": "9.0.100"
     },
@@ -75,7 +75,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -26,3 +26,31 @@ D:\Tr-Ch-i-Nim\LuuBichNguyen\bin\Debug\net8.0-windows\Interop.WMPLib.dll
 D:\Tr-Ch-i-Nim\LuuBichNguyen\bin\Debug\net8.0-windows\AxInterop.WMPLib.dll
 D:\Tr-Ch-i-Nim\LuuBichNguyen\obj\Debug\net8.0-windows\LuuBichNguyen.genruntimeconfig.cache
 D:\Tr-Ch-i-Nim\LuuBichNguyen\obj\Debug\net8.0-windows\ref\LuuBichNguyen.dll
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\bin\Debug\net8.0-windows\LuuBichNguyen.exe
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\bin\Debug\net8.0-windows\LuuBichNguyen.deps.json
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\bin\Debug\net8.0-windows\LuuBichNguyen.runtimeconfig.json
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\bin\Debug\net8.0-windows\LuuBichNguyen.dll
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\bin\Debug\net8.0-windows\LuuBichNguyen.pdb
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\bin\Debug\net8.0-windows\Interop.WMPLib.dll
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\bin\Debug\net8.0-windows\AxInterop.WMPLib.dll
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\obj\Debug\net8.0-windows\Interop.WMPLib.dll
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\obj\Debug\net8.0-windows\AxInterop.WMPLib.dll
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\obj\Debug\net8.0-windows\LuuBichNguyen.csproj.ResolveComReference.cache
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\obj\Debug\net8.0-windows\LuuBichNguyen.Properties.Resources.resources
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\obj\Debug\net8.0-windows\LuuBichNguyen.Views.Form1.resources
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\obj\Debug\net8.0-windows\LuuBichNguyen.Views.GameNim.resources
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\obj\Debug\net8.0-windows\LuuBichNguyen.Views.GameOver.resources
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\obj\Debug\net8.0-windows\LuuBichNguyen.Login.resources
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\obj\Debug\net8.0-windows\LuuBichNguyen.Views.Rock.resources
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\obj\Debug\net8.0-windows\LuuBichNguyen.Views.Setting.resources
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\obj\Debug\net8.0-windows\LuuBichNguyen.csproj.GenerateResource.cache
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\obj\Debug\net8.0-windows\LuuBichNguyen.GeneratedMSBuildEditorConfig.editorconfig
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\obj\Debug\net8.0-windows\LuuBichNguyen.AssemblyInfoInputs.cache
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\obj\Debug\net8.0-windows\LuuBichNguyen.AssemblyInfo.cs
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\obj\Debug\net8.0-windows\LuuBichNguyen.csproj.CoreCompileInputs.cache
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\obj\Debug\net8.0-windows\LuuBichNguyen.sourcelink.json
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\obj\Debug\net8.0-windows\LuuBichNguyen.dll
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\obj\Debug\net8.0-windows\refint\LuuBichNguyen.dll
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\obj\Debug\net8.0-windows\LuuBichNguyen.pdb
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\obj\Debug\net8.0-windows\LuuBichNguyen.genruntimeconfig.cache
+D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\obj\Debug\net8.0-windows\ref\LuuBichNguyen.dll

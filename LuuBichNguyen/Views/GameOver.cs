@@ -1,4 +1,5 @@
-﻿using LuuBichNguyen.Service;
+﻿using LuuBichNguyen.Model;
+using LuuBichNguyen.Service;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,9 +17,16 @@ namespace LuuBichNguyen.Views
         SFXButton sfxButton = new SFXButton();
         Form1 form1 = new Form1();
         Rock rock = new Rock();
+        private SaveAudio saveAudio;
+        private GameNim gameNim;
+
+        public static WMPLib.WindowsMediaPlayer wplayer2 = new WMPLib.WindowsMediaPlayer();
         public GameOver()
         {
             InitializeComponent();
+            axWindowsMediaPlayer1.Hide();
+
+           
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -38,6 +46,14 @@ namespace LuuBichNguyen.Views
 
 
 
+        }
+
+        public void AudioOver()
+        {
+            saveAudio = new SaveAudio();
+            wplayer2.URL = @"D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\Resources\game-over-39-199830.wav";
+            wplayer2.settings.volume = saveAudio.TrackBarVolume;
+            wplayer2.controls.play();
         }
 
         private void btnHome_Hover(object sender, EventArgs e)
@@ -94,12 +110,24 @@ namespace LuuBichNguyen.Views
         private void btnExit_Hover(object sender, EventArgs e)
         {
             sfxButton.ButtonSelected();
-            btnExit.Image = Properties.Resources.exit_hover;
+            btnExit.Image = Properties.Resources.quit_hover;
         }
 
         private void btnExit_Leave(object sender, EventArgs e)
         {
-            btnExit.Image = Properties.Resources.exit_normal;
+            btnExit.Image = Properties.Resources.quit_normal;
         }
+
+        private void GameOver_Load(object sender, EventArgs e)
+        {
+            //gameNim.StopCountdown();
+        }
+
+        private void labelMess_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }

@@ -35,17 +35,17 @@
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             buttonTake = new Button();
             label1 = new Label();
-            labelHealth = new Label();
-            labelAIHealth = new Label();
+            btnPause = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)btnPause).BeginInit();
             SuspendLayout();
             // 
             // labelTime
             // 
             labelTime.BackColor = Color.Transparent;
             labelTime.Font = new Font("Times New Roman", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            labelTime.Location = new Point(14, 12);
+            labelTime.Location = new Point(12, 9);
             labelTime.Name = "labelTime";
-            labelTime.Size = new Size(887, 41);
+            labelTime.Size = new Size(776, 31);
             labelTime.TabIndex = 0;
             labelTime.Text = "label1";
             labelTime.TextAlign = ContentAlignment.MiddleCenter;
@@ -56,9 +56,9 @@
             labelPlayer1.AutoSize = true;
             labelPlayer1.BackColor = Color.Transparent;
             labelPlayer1.Font = new Font("Times New Roman", 14.25F);
-            labelPlayer1.Location = new Point(80, 303);
+            labelPlayer1.Location = new Point(70, 227);
             labelPlayer1.Name = "labelPlayer1";
-            labelPlayer1.Size = new Size(86, 27);
+            labelPlayer1.Size = new Size(65, 21);
             labelPlayer1.TabIndex = 1;
             labelPlayer1.Text = "Player1";
             labelPlayer1.Click += labelPlayer1_Click;
@@ -68,18 +68,18 @@
             labelPlayer2.AutoSize = true;
             labelPlayer2.BackColor = Color.Transparent;
             labelPlayer2.Font = new Font("Times New Roman", 14.25F);
-            labelPlayer2.Location = new Point(747, 303);
+            labelPlayer2.Location = new Point(654, 227);
             labelPlayer2.Name = "labelPlayer2";
-            labelPlayer2.Size = new Size(37, 27);
+            labelPlayer2.Size = new Size(29, 21);
             labelPlayer2.TabIndex = 2;
             labelPlayer2.Text = "AI";
             // 
             // labelMess
             // 
             labelMess.BackColor = Color.Transparent;
-            labelMess.Location = new Point(14, 93);
+            labelMess.Location = new Point(12, 70);
             labelMess.Name = "labelMess";
-            labelMess.Size = new Size(887, 20);
+            labelMess.Size = new Size(776, 15);
             labelMess.TabIndex = 3;
             labelMess.Text = "label3";
             labelMess.TextAlign = ContentAlignment.MiddleCenter;
@@ -87,10 +87,9 @@
             // 
             // buttonTake
             // 
-            buttonTake.Location = new Point(410, 335);
-            buttonTake.Margin = new Padding(3, 4, 3, 4);
+            buttonTake.Location = new Point(359, 251);
             buttonTake.Name = "buttonTake";
-            buttonTake.Size = new Size(86, 31);
+            buttonTake.Size = new Size(75, 23);
             buttonTake.TabIndex = 4;
             buttonTake.Text = "Lấy";
             buttonTake.UseVisualStyleBackColor = true;
@@ -99,50 +98,44 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(106, 503);
+            label1.Location = new Point(93, 377);
             label1.Name = "label1";
-            label1.Size = new Size(0, 20);
+            label1.Size = new Size(0, 15);
             label1.TabIndex = 5;
             // 
-            // labelHealth
+            // btnPause
             // 
-            labelHealth.AutoSize = true;
-            labelHealth.BackColor = Color.Transparent;
-            labelHealth.Location = new Point(95, 335);
-            labelHealth.Name = "labelHealth";
-            labelHealth.Size = new Size(50, 20);
-            labelHealth.TabIndex = 6;
-            labelHealth.Text = "label2";
-            // 
-            // labelAIHealth
-            // 
-            labelAIHealth.AutoSize = true;
-            labelAIHealth.BackColor = Color.Transparent;
-            labelAIHealth.Location = new Point(747, 335);
-            labelAIHealth.Name = "labelAIHealth";
-            labelAIHealth.Size = new Size(50, 20);
-            labelAIHealth.TabIndex = 7;
-            labelAIHealth.Text = "label3";
+            btnPause.BackColor = Color.Transparent;
+            btnPause.BackgroundImage = Properties.Resources.Menu_Buttons_sprite__BnW_;
+            btnPause.BackgroundImageLayout = ImageLayout.Stretch;
+            btnPause.Location = new Point(12, 9);
+            btnPause.Name = "btnPause";
+            btnPause.Size = new Size(56, 44);
+            btnPause.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnPause.TabIndex = 6;
+            btnPause.TabStop = false;
+            btnPause.Click += btnPause_Click;
+            btnPause.MouseLeave += btnPause_Leave;
+            btnPause.MouseHover += btnPause_Hover;
             // 
             // GameNim
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.istockphoto_1126081792_612x612;
-            ClientSize = new Size(914, 389);
-            Controls.Add(labelAIHealth);
-            Controls.Add(labelHealth);
+            ClientSize = new Size(800, 292);
+            Controls.Add(btnPause);
             Controls.Add(label1);
             Controls.Add(buttonTake);
             Controls.Add(labelMess);
             Controls.Add(labelPlayer2);
             Controls.Add(labelPlayer1);
             Controls.Add(labelTime);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "GameNim";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form2";
             Load += GameNim_Load;
+            ((System.ComponentModel.ISupportInitialize)btnPause).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -156,7 +149,6 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Button buttonTake;
         private Label label1;
-        private Label labelHealth;
-        private Label labelAIHealth;
+        private PictureBox btnPause;
     }
 }

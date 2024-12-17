@@ -10,9 +10,11 @@ namespace LuuBichNguyen.Service
 {
     public class GameManager
     {
-        private List<BagRock> bagRockList;
+        public List<BagRock> bagRockList;
         private Random random = new Random();
         GameOver gameOver = new GameOver();
+        
+
         public bool IsPlayer1Turn { get; private set; } = true;
 
 
@@ -28,7 +30,7 @@ namespace LuuBichNguyen.Service
             public string Message { get; set; }
         }
 
-        public TakeRocksResult TakeRocksFromBag(int selectedBagIndex)
+        public TakeRocksResult TakeRocksFromBag(int selectedBagIndex, bool isAI, GameNim gameNim)
         {
             if (selectedBagIndex < 0 || selectedBagIndex >= bagRockList.Count)
             {
@@ -36,7 +38,7 @@ namespace LuuBichNguyen.Service
                 {
                     TakenRocks = 0,
                     RemainingRocks = 0,
-                    Message = "Không tìm thấy túi đá."
+                    Message = "Không tìm thấy túi."
                 };
             }
 
@@ -56,68 +58,75 @@ namespace LuuBichNguyen.Service
             int newQuantity = bag.GetQuantity() - rocksToTake;
             bag.SetQuantity(newQuantity);
 
-            return new TakeRocksResult
+            string actor = isAI ? "Người Máy" : "Người chơi";
+
+            var result = new TakeRocksResult
             {
                 TakenRocks = rocksToTake,
                 RemainingRocks = newQuantity,
-                Message = $"AI đã lấy {rocksToTake} viên sỏi từ túi {selectedBagIndex + 1}. Số lượng còn lại: {newQuantity}."
+                Message = $"{actor} đã lấy {rocksToTake} viên sỏi từ túi {selectedBagIndex + 1}. Số lượng còn lại: {newQuantity}."
             };
-        }
+
+            gameNim.StopCountdown();
+           
+            if(MessageBox.Show(result.Message) == DialogResult.OK) gameNim.StartCountdown();
 
 
-        public void RemoveRocksFromBag(BagRock bag, Control.ControlCollection controls)
-        {
-            // Lấy danh sách các PictureBox đại diện cho túi đá hiện tại
-            var rocksToRemove = controls.OfType<PictureBox>()
-                .Where(p => p.Tag != null && (int)p.Tag == bag.GetQuantity());
-
-            // Xóa các PictureBox tương ứng khỏi giao diện
-            foreach (var rock in rocksToRemove)
+            if (newQuantity == 0)
             {
-                controls.Remove(rock);
-                rock.Dispose();
+                gameNim.StopCountdown();
+                MessageBox.Show($"{actor} đã lấy hết sỏi từ túi {selectedBagIndex + 1}.");
+                gameOver.labelMess.Text = ($"{actor} ĐÃ GIÀNH CHIẾN THẮNG");
+                Form1.wplayer.controls.stop();
+                gameOver.AudioOver();
+                gameOver.Show();
+                gameNim.Close();
+                
             }
+
+            return result;
         }
 
-
-        public bool CheckGameOver()
-        {
-            return bagRockList.All(bag => bag.GetQuantity() == 0);
-            gameOver.Show();
-            
-        }
-        public void SwitchTurn()
+        public void SwitchTurn(GameNim gameNim)
         {
             IsPlayer1Turn = !IsPlayer1Turn;
+   
+
+            gameNim.UpdatePlayerTurnLabel();
+            gameNim.StartCountdown();           
         }
 
-        public void AITurn(int selectedBagIndex, Form parentForm)
+
+        public void AITurn(int selectedBagIndex, GameNim gameNim)
         {
-            // Lấy đá từ túi được người chơi chọn
-            var result = TakeRocksFromBag(selectedBagIndex);
-
-            if (result.TakenRocks > 0)
+            if (!IsPlayer1Turn)
             {
-                MessageBox.Show($"AI đã lấy {result.TakenRocks} viên sỏi từ túi {selectedBagIndex + 1}. Số lượng còn lại trong túi: {result.RemainingRocks}.");
-
-                // Kiểm tra kết thúc trò chơi
-                if (CheckGameOver())
+                if (selectedBagIndex >= 0 && selectedBagIndex < bagRockList.Count)
                 {
-                    MessageBox.Show("Trò chơi kết thúc! AI thắng!");
-                    parentForm.Close();
-                    return;
-                }
+                    if (bagRockList[selectedBagIndex].GetQuantity() > 0)
+                    {
+                        var takeRocksResult = TakeRocksFromBag(selectedBagIndex, true, gameNim);
+                        SwitchTurn(gameNim);
 
-                // Chuyển lượt sang người chơi
-                SwitchTurn();
-            }
-            else
-            {
-                MessageBox.Show("Túi đã hết sỏi nhỏ để lấy!");
+                        if (takeRocksResult.TakenRocks > 0)
+                        {
+                            // Corrected call: Only pass the number of rocks to remove
+                            gameNim.RemoveRocksFromUI(takeRocksResult.TakenRocks);
+                            gameNim.UpdateBagQuantityForSelectedBag(selectedBagIndex, takeRocksResult.RemainingRocks);
+                        }
+                        else
+                        {
+                            gameOver.Show();
+                            gameNim.Dispose();
+                        }
+                    }
+                    else
+                    {     
+                        gameOver.Show();
+                        gameNim.Dispose();
+                    }
+                }
             }
         }
-
-
-
     }
 }

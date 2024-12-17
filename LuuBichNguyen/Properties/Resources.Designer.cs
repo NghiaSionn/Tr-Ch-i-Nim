@@ -143,9 +143,29 @@ namespace LuuBichNguyen.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Menu_Buttons_sprite__BnW_ {
+            get {
+                object obj = ResourceManager.GetObject("Menu Buttons sprite (BnW)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Menu_Buttons_sprite__BnW____Copy {
             get {
                 object obj = ResourceManager.GetObject("Menu Buttons sprite (BnW) - Copy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menu_Buttons_sprite__Colored_ {
+            get {
+                object obj = ResourceManager.GetObject("Menu Buttons sprite (Colored)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

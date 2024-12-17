@@ -12,13 +12,13 @@ namespace LuuBichNguyen.Service
         public void ButtonSelected()
         {
             
-            SoundPlayer sound = new SoundPlayer(@"D:\Tr-Ch-i-Nim\LuuBichNguyen\Resources\background sound.wav");
+            SoundPlayer sound = new SoundPlayer(@"D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\Resources\background sound.wav");
             sound.Play();
         }
 
         public void ButtonPressed()
         {
-            SoundPlayer sound = new SoundPlayer(@"D:\Tr-Ch-i-Nim\LuuBichNguyen\Resources\click-buttons-ui-menu-sounds-effects-button-7-203601.wav");
+            SoundPlayer sound = new SoundPlayer(@"D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\Resources\click-buttons-ui-menu-sounds-effects-button-7-203601.wav");
             sound.Play();
         }
     }

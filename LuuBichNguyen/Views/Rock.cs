@@ -32,7 +32,28 @@ namespace LuuBichNguyen.Views
 
         private void textBoxInt_TextChanged(object sender, EventArgs e)
         {
+            if (!int.TryParse(textBoxInt.Text, out int numBags))
+            {
+ 
+                textBoxInt.Text = "";
+                labelWaring.Text = "Vui lòng nhập số nguyên dương.";
+                textBoxInt.SelectionStart = textBoxInt.Text.Length;
+                labelWaring.Visible = true;
+                return;
+            }
 
+
+            if (numBags > 10)
+            {
+                textBoxInt.Text = "10";
+                labelWaring.Text = "Số lượng tối đa là 10.";
+                textBoxInt.SelectionStart = textBoxInt.Text.Length;
+                labelWaring.Visible = true;
+            }
+            else
+            {
+                labelWaring.Visible = false;
+            }
         }
 
         private void Rock_Load(object sender, EventArgs e)
@@ -55,6 +76,7 @@ namespace LuuBichNguyen.Views
 
 
                 List<BagRock> bagRockList = new List<BagRock>();
+
                 for (int i = 0; i < numBags; i++)
                 {
                     bagRockList.Add(new BagRock(10));

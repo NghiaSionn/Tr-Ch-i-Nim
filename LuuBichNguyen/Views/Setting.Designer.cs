@@ -31,8 +31,10 @@
             trackBar1 = new TrackBar();
             labelMusic = new Label();
             panel1 = new Panel();
+            btnPause = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)btnPause).BeginInit();
             SuspendLayout();
             // 
             // trackBar1
@@ -60,12 +62,28 @@
             panel1.BackColor = Color.Transparent;
             panel1.BackgroundImage = Properties.Resources.option_menu;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(btnPause);
             panel1.Controls.Add(labelMusic);
             panel1.Controls.Add(trackBar1);
             panel1.Location = new Point(69, 17);
             panel1.Name = "panel1";
             panel1.Size = new Size(585, 282);
             panel1.TabIndex = 3;
+            // 
+            // btnPause
+            // 
+            btnPause.BackColor = Color.Transparent;
+            btnPause.BackgroundImage = Properties.Resources.Menu_Buttons_sprite__BnW_;
+            btnPause.BackgroundImageLayout = ImageLayout.Stretch;
+            btnPause.Location = new Point(0, -5);
+            btnPause.Name = "btnPause";
+            btnPause.Size = new Size(56, 44);
+            btnPause.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnPause.TabIndex = 7;
+            btnPause.TabStop = false;
+            btnPause.Click += btnPause_Click;
+            btnPause.MouseLeave += btnPause_Leave;
+            btnPause.MouseHover += btnPause_Hover;
             // 
             // Setting
             // 
@@ -81,6 +99,7 @@
             ((System.ComponentModel.ISupportInitialize)trackBar1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)btnPause).EndInit();
             ResumeLayout(false);
         }
 
@@ -89,5 +108,6 @@
         private TrackBar trackBar1;
         private Label labelMusic;
         private Panel panel1;
+        private PictureBox btnPause;
     }
 }

@@ -18,9 +18,14 @@ namespace LuuBichNguyen.Views
         private bool isPlayer1Turn = true;
         private List<BagRock> bagRockList;
         private PictureBox selectedBagPictureBox = null;
-        private List<PictureBox> rockPictureBoxes = new List<PictureBox>();
+        public List<PictureBox> rockPictureBoxes = new List<PictureBox>();
         private GameManager gameManager;
         private Random random = new Random();
+        Setting setting = new Setting();
+
+        SFXButton sfxButton = new SFXButton();
+
+        private int selectedBagIndex = -1;
 
 
         public GameNim(List<BagRock> bags)
@@ -38,6 +43,7 @@ namespace LuuBichNguyen.Views
 
             labelTime.Text = "Chọn túi để bắt đầu";
             labelMess.Visible = false;
+
 
         }
 
@@ -66,6 +72,7 @@ namespace LuuBichNguyen.Views
 
         private void OnCountdownFinished()
         {
+            labelMess.Visible = true;
             if (gameManager.IsPlayer1Turn)
             {
                 MessageBox.Show($"{PlayerM.playerName} hết thời gian! Chuyển lượt cho đối thủ.");
@@ -75,30 +82,30 @@ namespace LuuBichNguyen.Views
                 MessageBox.Show("AI hết thời gian! Lượt của người chơi.");
             }
 
-            gameManager.SwitchTurn();
-            UpdatePlayerTurnLabel();
+            gameManager.SwitchTurn(this);
+        }
 
-            if (!gameManager.IsPlayer1Turn)
-            {
-                MessageBox.Show("Lượt của AI!");
-                gameManager.AITurn(this);
-            }
-            else
-            {
-                StartCountdown();
-            }
+        public void UpdatePlayerTurnLabel()
+        {
+            labelMess.Visible = true;
+            labelMess.Text = gameManager.IsPlayer1Turn ? $"Lượt {PlayerM.playerName}" : "Lượt đối thủ";
+            buttonTake.Visible = gameManager.IsPlayer1Turn;
+            labelTime.Text = "30s";
         }
 
 
 
 
 
-        private void StartCountdown()
+
+        public void StartCountdown()
         {
             timeCount.Start(30);
+            labelTime.Text = "30s";
         }
 
-        private void StopCountdown()
+
+        public void StopCountdown()
         {
             timeCount.Stop();
         }
@@ -126,7 +133,7 @@ namespace LuuBichNguyen.Views
                 bagPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                 bagPictureBox.Width = bagWidth;
                 bagPictureBox.Height = 50;
-                bagPictureBox.Image = Image.FromFile(@"D:\Tr-Ch-i-Nim\LuuBichNguyen\Resources\business-bag.png");
+                bagPictureBox.Image = Image.FromFile(@"D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\Resources\business-bag.png");
                 bagPictureBox.Location = new Point(x, y);
 
                 bagPictureBox.Tag = bag.GetQuantity();
@@ -148,25 +155,28 @@ namespace LuuBichNguyen.Views
             }
 
             selectedBagPictureBox = sender as PictureBox;
+
             if (selectedBagPictureBox != null)
             {
+                selectedBagIndex = bagRockList.IndexOf(bagRockList.FirstOrDefault(bag => bag.GetQuantity() == (int)selectedBagPictureBox.Tag));
+
                 int numRocks = (int)selectedBagPictureBox.Tag;
                 MessageBox.Show($"Số lượng sỏi trong túi này: {numRocks}");
 
-                UpdateBagVisibility(false); // Ẩn các túi khác
+                UpdateBagVisibility(false);
                 selectedBagPictureBox.Visible = true;
 
                 DisplayRocksInSelectedBag();
                 ChoseCoins();
-                StartCountdown();
             }
         }
+
 
         private void UpdateBagVisibility(bool isVisible)
         {
             foreach (Control control in this.Controls.OfType<PictureBox>())
             {
-                if (control != selectedBagPictureBox) 
+                if (control != selectedBagPictureBox)
                 {
                     control.Visible = isVisible;
                 }
@@ -197,7 +207,7 @@ namespace LuuBichNguyen.Views
                 rockPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                 rockPictureBox.Width = 30;
                 rockPictureBox.Height = 30;
-                rockPictureBox.Image = Image.FromFile(@"D:\Tr-Ch-i-Nim\LuuBichNguyen\Resources\rocks-export.png");
+                rockPictureBox.Image = Image.FromFile(@"D:\Đồ án\Nguyên\LuuBichNguyen\LuuBichNguyen\Resources\rocks-export.png");
 
                 int xPosition = 50 + i * (30 + padding);
 
@@ -211,7 +221,6 @@ namespace LuuBichNguyen.Views
 
         public void ChoseCoins()
         {
-
             DialogResult result = MessageBox.Show("Chọn mặt đồng xu: Sấp?", "Chọn mặt đồng xu", MessageBoxButtons.YesNo);
 
             string playerChoice = result == DialogResult.Yes ? "Sấp" : "Ngửa";
@@ -226,27 +235,24 @@ namespace LuuBichNguyen.Views
             }
             else
             {
-                labelMess.Visible = true;
                 MessageBox.Show($"Kết quả tung đồng xu là {coinResult}. Lượt đối thủ.");
-                
+
                 UpdatePlayerTurnLabel();
-                gameManager.AITurn(this);
-                gameManager.SwitchTurn();
+                gameManager.SwitchTurn(this);
 
-                StartCountdown();
-                
+                if (!gameManager.IsPlayer1Turn)
+                {
+                    // AI chờ ngẫu nhiên từ 2-10 giây trước khi lấy đá
+                    Task.Delay(random.Next(2000, 10000)).ContinueWith(_ =>
+                    {
+                        this.Invoke(new Action(() =>
+                        {
+                            gameManager.AITurn(selectedBagIndex, this);
+                            StartCountdown();
+                        }));
+                    });
+                }
             }
-        }
-
-
-
-        public void UpdatePlayerTurnLabel()
-        {
-            labelMess.Visible = true;
-            labelMess.Text = gameManager.IsPlayer1Turn ? $"Lượt {PlayerM.playerName}" : "Lượt đối thủ";
-
-
-            buttonTake.Visible = gameManager.IsPlayer1Turn;
         }
 
 
@@ -258,58 +264,90 @@ namespace LuuBichNguyen.Views
 
         private void buttonTake_Click(object sender, EventArgs e)
         {
-            if (selectedBagPictureBox == null)
+            if (!gameManager.IsPlayer1Turn)
+            {
+                MessageBox.Show("Không thể lấy sỏi vì đang là lượt của AI.");
+                return;
+            }
+
+            if (selectedBagIndex == -1)
             {
                 MessageBox.Show("Vui lòng chọn túi trước khi lấy đá.");
                 return;
             }
 
-            int numRocks = (int)selectedBagPictureBox.Tag;
-            BagRock selectedBag = bagRockList.FirstOrDefault(bag => bag.GetQuantity() == numRocks);
+            var takeRocksResult = gameManager.TakeRocksFromBag(selectedBagIndex, false, this);
 
-            if (selectedBag == null)
+            if (takeRocksResult.TakenRocks > 0)
             {
-                MessageBox.Show("Không tìm thấy túi này.");
-                return;
+
+                UpdateBagQuantityForSelectedBag(selectedBagIndex, takeRocksResult.RemainingRocks);
+
+                RemoveRocksFromUI(takeRocksResult.TakenRocks);
+
+                gameManager.SwitchTurn(this);
+                UpdatePlayerTurnLabel();
+
+                if (!gameManager.IsPlayer1Turn)
+                {
+                    gameManager.AITurn(selectedBagIndex, this);
+
+
+                }
             }
-
-            var result = gameManager.TakeRocksFromBag(selectedBag);
-
-            MessageBox.Show(result.Message);
-
-            // Cập nhật giao diện
-            UpdateBagVisibility(true);
-            DisplayBagContents();
-
-            if (gameManager.CheckGameOver())
+            else
             {
-                MessageBox.Show($"{PlayerM.playerName} thắng!");
-                this.Close();
-                return;
-            }
 
-            // Chuyển lượt
-            gameManager.SwitchTurn();
-            UpdatePlayerTurnLabel();
-
-            
-            if (!gameManager.IsPlayer1Turn)
-            {
-                gameManager.AITurn(this);
+                MessageBox.Show(takeRocksResult.Message);
             }
         }
 
 
-        private void AITurnBack()
+
+        public void UpdateBagQuantityForSelectedBag(int selectedBagIndex, int remainingRocks)
         {
-            MessageBox.Show("Đây là lượt của AI");
 
-            // Xử lý logic chơi của AI
-            gameManager.SwitchTurn();
-            UpdatePlayerTurnLabel();
+            var selectedBagPictureBox = this.Controls.OfType<PictureBox>()
+                .FirstOrDefault(pb => pb.Tag != null && (int)pb.Tag == bagRockList[selectedBagIndex].GetQuantity());
+
+            if (selectedBagPictureBox != null)
+            {
+                selectedBagPictureBox.Tag = remainingRocks;
+            }
         }
 
+        public void RemoveRocksFromUI(int numRocksToRemove)
+        {
+            for (int i = 0; i < numRocksToRemove && rockPictureBoxes.Count > 0; i++)
+            {
+                var rockToRemove = rockPictureBoxes.FirstOrDefault();
+                if (rockToRemove != null)
+                {
+                    rockPictureBoxes.Remove(rockToRemove);
+                    this.Controls.Remove(rockToRemove);
+                    rockToRemove.Dispose();
+                }
+            }
+        }
 
+        private void btnPause_Click(object sender, EventArgs e)
+        {
+            sfxButton.ButtonPressed();
+  
+            setting.ShowDialog();
+                               
+        }
 
+        private void btnPause_Hover(object sender, EventArgs e)
+        {
+            sfxButton.ButtonSelected();
+
+            btnPause.Image = Properties.Resources.Menu_Buttons_sprite__Colored_;
+        }
+
+        private void btnPause_Leave(object sender, EventArgs e)
+        {
+            btnPause.Image = Properties.Resources.Menu_Buttons_sprite__BnW_;
+        }
     }
 }

@@ -81,6 +81,7 @@ namespace LuuBichNguyen.Views
             Setting setting = new Setting();
             setting.ShowDialog();
 
+
         }
 
         private void btnOption_Hover(object sender, EventArgs e)
